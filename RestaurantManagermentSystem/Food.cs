@@ -16,10 +16,37 @@ namespace RestaurantManagermentSystem
         {
             InitializeComponent();
         }
-
-        private void Food_Click(object sender, EventArgs e)
+        private void guna2Panel1_Click(object sender, EventArgs e)
         {
-            guna2GradientButton1.Visible = false;
+            if (guna2GradientButton1.Visible == false)
+            {
+                guna2GradientButton1.Visible = true;
+                guna2Panel1.BorderThickness = 5;
+            }
+            else
+            {
+                guna2GradientButton1.Visible = false;
+                guna2Panel1.BorderThickness = 0;
+            }
+        }
+        private void AppToMenu()
+        {
+            
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            guna2Panel1_Click(sender, e);
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            guna2Panel1_Click(sender, e);
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            guna2Panel1_Click(sender, e);
         }
     }
 }

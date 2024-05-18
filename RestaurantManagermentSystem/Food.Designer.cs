@@ -80,6 +80,7 @@
             guna2ShadowPanel1.ShadowColor = Color.Black;
             guna2ShadowPanel1.Size = new Size(153, 43);
             guna2ShadowPanel1.TabIndex = 1;
+            guna2ShadowPanel1.Paint += guna2ShadowPanel1_Paint;
             // 
             // label1
             // 
@@ -89,6 +90,7 @@
             label1.Size = new Size(111, 20);
             label1.TabIndex = 0;
             label1.Text = "sườn chua ngọt";
+            label1.Click += label1_Click;
             // 
             // guna2Panel1
             // 
@@ -103,6 +105,7 @@
             guna2Panel1.ShadowDecoration.CustomizableEdges = customizableEdges6;
             guna2Panel1.Size = new Size(218, 196);
             guna2Panel1.TabIndex = 2;
+            guna2Panel1.Click += guna2Panel1_Click;
             // 
             // guna2GradientButton1
             // 
@@ -123,6 +126,7 @@
             guna2GradientButton1.ShadowDecoration.CustomizableEdges = customizableEdges4;
             guna2GradientButton1.Size = new Size(35, 34);
             guna2GradientButton1.TabIndex = 0;
+            guna2GradientButton1.Click += guna2GradientButton1_Click;
             // 
             // Food
             // 
@@ -136,7 +140,6 @@
             ImeMode = ImeMode.NoControl;
             Name = "Food";
             Size = new Size(218, 196);
-            Click += Food_Click;
             guna2GradientPanel1.ResumeLayout(false);
             guna2GradientPanel1.PerformLayout();
             guna2ShadowPanel1.ResumeLayout(false);

@@ -25,39 +25,27 @@ namespace RestaurantManagermentSystem
             }
         }
 
-        private void FHome_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2Button1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void guna2GradientButton3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2GradientButton2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void guna2ControlBox1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void guna2Panel5_Paint(object sender, PaintEventArgs e)
+        private void FHome_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            string text = InputDiscount.Text;
+            Total.Text = "112312332232";
+            Subtotal.Text = text;
+            Discount.Text = text;
+        }
+
+        private void BSave_Click(object sender, EventArgs e)
+        {
+            Total.Text="111";
         }
     }
 }
